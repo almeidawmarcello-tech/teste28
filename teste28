@@ -1,0 +1,7 @@
+ubuntu@vcn-vexa-vnic:~/vexa$ docker exec vexa-lite sh -c '
+> curl -sS -X POST http://127.0.0.1:8056/bots \
+>   -H "Content-Type: application/json" \
+>   -H "X-API-Key: $VEXA_API_KEY" \
+>   -d "{\"meeting_url\":\"https://teams.live.com/meet/9347963279065?p=lQkRR3JpZIkUSIovEe\",\"bot_name\":\"Vexa EI\",\"language\":\"pt\",\"transcribe_enabled\":true,\"recording_enabled\":false}"
+> '
+{"detail": "Missing API key"}ubuntu@vcn-vexa-vnic:~/vexa$
